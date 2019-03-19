@@ -1,4 +1,5 @@
 class Contact < ApplicationRecord
+  belongs_to :Contact
   def freindly_updated_at
     created_at.strftime("%b %e, %l:%M %p")    
   end
